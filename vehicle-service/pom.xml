@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>lk.ijse</groupId>
-    <artifactId>eureka-server</artifactId>
-    <version>1.0.0</version>
-    <name>eureka-server</name>
-    <description>eureka-server</description>
+    <artifactId>vehicle-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>vehicle-service</name>
+    <description>vehicle-service</description>
     <url/>
     <licenses>
         <license/>
@@ -32,8 +32,12 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
