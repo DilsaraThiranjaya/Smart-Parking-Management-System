@@ -1,0 +1,7 @@
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/ParkingSpaceServiceApplication.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/controller/ParkingSpaceController.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/dto/ParkingSpaceRequest.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/dto/ReservationRequest.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/model/ParkingSpace.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/repository/ParkingSpaceRepository.java
+/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/service/ParkingSpaceService.java

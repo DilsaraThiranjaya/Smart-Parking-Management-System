@@ -1,0 +1,12 @@
+com/spms/vehicle/service/VehicleService.class
+com/spms/vehicle/model/Vehicle$VehicleType.class
+com/spms/vehicle/repository/VehicleRepository.class
+com/spms/vehicle/dto/VehicleRequest.class
+com/spms/vehicle/dto/VehicleEntryRequest.class
+com/spms/vehicle/model/VehicleEntry.class
+com/spms/vehicle/model/Vehicle$VehicleStatus.class
+com/spms/vehicle/repository/VehicleEntryRepository.class
+com/spms/vehicle/VehicleServiceApplication.class
+com/spms/vehicle/model/VehicleEntry$EntryStatus.class
+com/spms/vehicle/model/Vehicle.class
+com/spms/vehicle/controller/VehicleController.class

@@ -10,4 +10,4 @@ spring:
         git:
           uri: https://github.com/DilsaraThiranjaya/SPMS-cloud-config.git
           clone-on-start: true
-          search-paths: '{application}'
+          search-paths: "vehicle-service,user-service,parking-space-service,payment-service"

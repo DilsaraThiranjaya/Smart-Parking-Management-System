@@ -2,26 +2,37 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
 
 spring:
+  application:
+    name: api-gateway
   cloud:
-    loadbalancer:
-      rule: random
+    config:
+      enabled: false
     gateway:
       routes:
-        - id: user-service
-          uri: lb://USER-SERVICE
+        - id: parking-space-service
+          uri: lb://parking-space-service
           predicates:
-            - Path=/users/**
+            - Path=/api/v1/parking-spaces/**
+
         - id: vehicle-service
-          uri: lb://VEHICLE-SERVICE
+          uri: lb://vehicle-service
           predicates:
-            - Path=/vehicles/**
-        - id: parking-service
-          uri: lb://PARKING-SERVICE
+            - Path=/api/v1/vehicles/**
+
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/parkings/**
+            - Path=/api/v1/users/**
+
         - id: payment-service
-          uri: lb://PAYMENT-SERVICE
+          uri: lb://payment-service
           predicates:
-            - Path=/payments/**
+            - Path=/api/v1/payments/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

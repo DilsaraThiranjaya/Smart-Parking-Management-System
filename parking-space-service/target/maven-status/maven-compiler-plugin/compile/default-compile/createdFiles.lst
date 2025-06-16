@@ -1,0 +1,9 @@
+com/spms/parkingspace/dto/ReservationRequest.class
+com/spms/parkingspace/dto/ParkingSpaceRequest.class
+com/spms/parkingspace/controller/ParkingSpaceController.class
+com/spms/parkingspace/model/ParkingSpace$SpaceType.class
+com/spms/parkingspace/repository/ParkingSpaceRepository.class
+com/spms/parkingspace/ParkingSpaceServiceApplication.class
+com/spms/parkingspace/model/ParkingSpace$SpaceStatus.class
+com/spms/parkingspace/model/ParkingSpace.class
+com/spms/parkingspace/service/ParkingSpaceService.class
