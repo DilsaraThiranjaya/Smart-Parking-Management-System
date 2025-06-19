@@ -1,10 +1,6 @@
 package com.spms.vehicle.controller;
 
-import com.spms.vehicle.dto.VehicleRequest;
-import com.spms.vehicle.dto.VehicleEntryRequest;
-import com.spms.vehicle.model.Vehicle;
-import com.spms.vehicle.model.Vehicle.VehicleStatus;
-import com.spms.vehicle.model.VehicleEntry;
+import com.spms.vehicle.entity.Vehicle;
 import com.spms.vehicle.service.VehicleService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/vehicles")
-@CrossOrigin(origins = "*")
+@RequestMapping("/api/vehicles")
 public class VehicleController {
     
     @Autowired
@@ -30,29 +26,60 @@ public class VehicleController {
     }
     
     @GetMapping("/{id}")
-    public ResponseEntity<Vehicle> getVehicleById(@PathVariable("id") Long id) {
-        try {
-            Vehicle vehicle = vehicleService.getVehicleById(id);
-            return ResponseEntity.ok(vehicle);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    public ResponseEntity<Vehicle> getVehicleById(@PathVariable Long id) {
+        Optional<Vehicle> vehicle = vehicleService.getVehicleById(id);
+        return vehicle.map(ResponseEntity::ok)
+                     .orElse(ResponseEntity.notFound().build());
     }
     
-    @GetMapping("/license/{licensePlate}")
-    public ResponseEntity<Vehicle> getVehicleByLicensePlate(@PathVariable("licensePlate") String licensePlate) {
-        try {
-            Vehicle vehicle = vehicleService.getVehicleByLicensePlate(licensePlate);
-            return ResponseEntity.ok(vehicle);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
+    @GetMapping("/license-plate/{licensePlate}")
+    public ResponseEntity<Vehicle> getVehicleByLicensePlate(@PathVariable String licensePlate) {
+        Optional<Vehicle> vehicle = vehicleService.getVehicleByLicensePlate(licensePlate);
+        return vehicle.map(ResponseEntity::ok)
+                     .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<Vehicle>> getVehiclesByUserId(@PathVariable Long userId) {
+        List<Vehicle> vehicles = vehicleService.getVehiclesByUserId(userId);
+        return ResponseEntity.ok(vehicles);
+    }
+    
+    @GetMapping("/type/{vehicleType}")
+    public ResponseEntity<List<Vehicle>> getVehiclesByType(@PathVariable Vehicle.VehicleType vehicleType) {
+        List<Vehicle> vehicles = vehicleService.getVehiclesByType(vehicleType);
+        return ResponseEntity.ok(vehicles);
+    }
+    
+    @GetMapping("/make/{make}")
+    public ResponseEntity<List<Vehicle>> getVehiclesByMake(@PathVariable String make) {
+        List<Vehicle> vehicles = vehicleService.getVehiclesByMake(make);
+        return ResponseEntity.ok(vehicles);
+    }
+    
+    @GetMapping("/make/{make}/model/{model}")
+    public ResponseEntity<List<Vehicle>> getVehiclesByMakeAndModel(
+            @PathVariable String make, @PathVariable String model) {
+        List<Vehicle> vehicles = vehicleService.getVehiclesByMakeAndModel(make, model);
+        return ResponseEntity.ok(vehicles);
+    }
+    
+    @GetMapping("/parked")
+    public ResponseEntity<List<Vehicle>> getParkedVehicles() {
+        List<Vehicle> vehicles = vehicleService.getParkedVehicles();
+        return ResponseEntity.ok(vehicles);
+    }
+    
+    @GetMapping("/parked/user/{userId}")
+    public ResponseEntity<List<Vehicle>> getParkedVehiclesByUserId(@PathVariable Long userId) {
+        List<Vehicle> vehicles = vehicleService.getParkedVehiclesByUserId(userId);
+        return ResponseEntity.ok(vehicles);
     }
     
     @PostMapping
-    public ResponseEntity<Vehicle> createVehicle(@Valid @RequestBody VehicleRequest request) {
+    public ResponseEntity<Vehicle> createVehicle(@Valid @RequestBody Vehicle vehicle) {
         try {
-            Vehicle createdVehicle = vehicleService.createVehicle(request);
+            Vehicle createdVehicle = vehicleService.createVehicle(vehicle);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdVehicle);
         } catch (RuntimeException e) {
             return ResponseEntity.badRequest().build();
@@ -60,18 +87,43 @@ public class VehicleController {
     }
     
     @PutMapping("/{id}")
-    public ResponseEntity<Vehicle> updateVehicle(@PathVariable("id") Long id,
-                                               @Valid @RequestBody VehicleRequest request) {
+    public ResponseEntity<Vehicle> updateVehicle(
+            @PathVariable Long id, @Valid @RequestBody Vehicle vehicleDetails) {
         try {
-            Vehicle updatedVehicle = vehicleService.updateVehicle(id, request);
+            Vehicle updatedVehicle = vehicleService.updateVehicle(id, vehicleDetails);
             return ResponseEntity.ok(updatedVehicle);
         } catch (RuntimeException e) {
             return ResponseEntity.notFound().build();
         }
     }
     
+    @PutMapping("/{id}/entry")
+    public ResponseEntity<Vehicle> simulateVehicleEntry(
+            @PathVariable Long id, @RequestBody Map<String, Long> request) {
+        try {
+            Long parkingSpaceId = request.get("parkingSpaceId");
+            if (parkingSpaceId == null) {
+                return ResponseEntity.badRequest().build();
+            }
+            Vehicle vehicle = vehicleService.simulateVehicleEntry(id, parkingSpaceId);
+            return ResponseEntity.ok(vehicle);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
+    
+    @PutMapping("/{id}/exit")
+    public ResponseEntity<Vehicle> simulateVehicleExit(@PathVariable Long id) {
+        try {
+            Vehicle vehicle = vehicleService.simulateVehicleExit(id);
+            return ResponseEntity.ok(vehicle);
+        } catch (RuntimeException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
+    
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteVehicle(@PathVariable("id") Long id) {
+    public ResponseEntity<Void> deleteVehicle(@PathVariable Long id) {
         try {
             vehicleService.deleteVehicle(id);
             return ResponseEntity.noContent().build();
@@ -80,69 +132,9 @@ public class VehicleController {
         }
     }
     
-    @GetMapping("/owner/{ownerId}")
-    public ResponseEntity<List<Vehicle>> getVehiclesByOwner(@PathVariable("ownerId") String ownerId) {
-        List<Vehicle> vehicles = vehicleService.getVehiclesByOwner(ownerId);
-        return ResponseEntity.ok(vehicles);
-    }
-    
-    @GetMapping("/status/{status}")
-    public ResponseEntity<List<Vehicle>> getVehiclesByStatus(@PathVariable("status") VehicleStatus status) {
-        List<Vehicle> vehicles = vehicleService.getVehiclesByStatus(status);
-        return ResponseEntity.ok(vehicles);
-    }
-    
-    @PostMapping("/entry")
-    public ResponseEntity<VehicleEntry> simulateVehicleEntry(@Valid @RequestBody VehicleEntryRequest request) {
-        try {
-            VehicleEntry entry = vehicleService.simulateVehicleEntry(request);
-            return ResponseEntity.status(HttpStatus.CREATED).body(entry);
-        } catch (RuntimeException e) {
-            return ResponseEntity.badRequest().build();
-        }
-    }
-    
-    @PostMapping("/{vehicleId}/exit")
-    public ResponseEntity<VehicleEntry> simulateVehicleExit(@PathVariable("vehicleId") Long vehicleId) {
-        try {
-            VehicleEntry entry = vehicleService.simulateVehicleExit(vehicleId);
-            return ResponseEntity.ok(entry);
-        } catch (RuntimeException e) {
-            return ResponseEntity.badRequest().build();
-        }
-    }
-    
-    @GetMapping("/{vehicleId}/entries")
-    public ResponseEntity<List<VehicleEntry>> getVehicleEntryHistory(@PathVariable("vehicleId") Long vehicleId) {
-        List<VehicleEntry> entries = vehicleService.getVehicleEntryHistory(vehicleId);
-        return ResponseEntity.ok(entries);
-    }
-    
-    @GetMapping("/entries")
-    public ResponseEntity<List<VehicleEntry>> getAllVehicleEntries() {
-        List<VehicleEntry> entries = vehicleService.getAllVehicleEntries();
-        return ResponseEntity.ok(entries);
-    }
-    
-    @GetMapping("/entries/{entryId}")
-    public ResponseEntity<VehicleEntry> getVehicleEntryById(@PathVariable("entryId") Long entryId) {
-        try {
-            VehicleEntry entry = vehicleService.getVehicleEntryById(entryId);
-            return ResponseEntity.ok(entry);
-        } catch (RuntimeException e) {
-            return ResponseEntity.notFound().build();
-        }
-    }
-    
-    @GetMapping("/entries/active")
-    public ResponseEntity<List<VehicleEntry>> getActiveVehicleEntries() {
-        List<VehicleEntry> entries = vehicleService.getActiveVehicleEntries();
-        return ResponseEntity.ok(entries);
-    }
-    
-    @GetMapping("/statistics")
-    public ResponseEntity<Map<String, Object>> getVehicleStatistics() {
-        Map<String, Object> stats = vehicleService.getVehicleStatistics();
-        return ResponseEntity.ok(stats);
+    @GetMapping("/stats/parked-count")
+    public ResponseEntity<Map<String, Long>> getParkedVehiclesCount() {
+        Long count = vehicleService.getParkedVehiclesCount();
+        return ResponseEntity.ok(Map.of("parkedVehicles", count));
     }
 }

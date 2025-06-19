@@ -6,7 +6,6 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="eureka-server" />
-          <element id="module-output" name="config-server" />
         </element>
       </element>
     </root>

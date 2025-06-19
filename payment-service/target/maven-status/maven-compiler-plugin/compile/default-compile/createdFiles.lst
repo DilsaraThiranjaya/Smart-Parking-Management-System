@@ -1,4 +1,7 @@
-com/spms/payment/PaymentServiceApplication.class
-com/spms/payment/model/Payment$PaymentMethod.class
-com/spms/payment/model/Payment$PaymentStatus.class
-com/spms/payment/model/Payment.class
+com\spms\payment\PaymentServiceApplication.class
+com\spms\payment\controller\PaymentController.class
+com\spms\payment\entity\Payment$PaymentStatus.class
+com\spms\payment\repository\PaymentRepository.class
+com\spms\payment\service\PaymentService.class
+com\spms\payment\entity\Payment.class
+com\spms\payment\entity\Payment$PaymentMethod.class

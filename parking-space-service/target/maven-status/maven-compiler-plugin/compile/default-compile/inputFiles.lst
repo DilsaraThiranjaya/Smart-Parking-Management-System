@@ -1,7 +1,5 @@
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/ParkingSpaceServiceApplication.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/controller/ParkingSpaceController.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/dto/ParkingSpaceRequest.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/dto/ReservationRequest.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/model/ParkingSpace.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/repository/ParkingSpaceRepository.java
-/Users/supunmadhuranga/Downloads/project/parking-space-service/src/main/java/com/spms/parkingspace/service/ParkingSpaceService.java
+C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\parking-space-service\src\main\java\com\spms\parkingspace\controller\ParkingSpaceController.java
+C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\parking-space-service\src\main\java\com\spms\parkingspace\entity\ParkingSpace.java
+C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\parking-space-service\src\main\java\com\spms\parkingspace\ParkingSpaceServiceApplication.java
+C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\parking-space-service\src\main\java\com\spms\parkingspace\repository\ParkingSpaceRepository.java
+C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\parking-space-service\src\main\java\com\spms\parkingspace\service\ParkingSpaceService.java
