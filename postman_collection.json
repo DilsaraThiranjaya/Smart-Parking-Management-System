@@ -1,0 +1,847 @@
+{
+  "info": {
+    "name": "Smart Parking Management System (SPMS)",
+    "description": "Comprehensive API collection for SPMS microservices",
+    "version": "1.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "key": "vehicle_id",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "key": "parking_space_id",
+      "value": "1",
+      "type": "string"
+    },
+    {
+      "key": "payment_id",
+      "value": "1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "User Service",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"john_doe\",\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"password123\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"phoneNumber\": \"+1234567890\",\n  \"userType\": \"REGULAR_USER\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/register",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "register"]
+            }
+          }
+        },
+        {
+          "name": "Authenticate User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"usernameOrEmail\": \"john_doe\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/authenticate",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "authenticate"]
+            }
+          }
+        },
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/users",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"]
+            }
+          }
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/users/{{user_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get User by Username",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/users/username/john_doe",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "username", "john_doe"]
+            }
+          }
+        },
+        {
+          "name": "Get Active Users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/users/active",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "active"]
+            }
+          }
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"john_doe_updated\",\n  \"email\": \"john.doe.updated@example.com\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"phoneNumber\": \"+1234567890\",\n  \"userType\": \"REGULAR_USER\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/{{user_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Change Password",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"currentPassword\": \"password123\",\n  \"newPassword\": \"newpassword123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/{{user_id}}/change-password",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "{{user_id}}", "change-password"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Parking Space Service",
+      "item": [
+        {
+          "name": "Create Parking Space",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"spaceNumber\": \"A001\",\n  \"location\": \"Downtown Mall Parking\",\n  \"zone\": \"Zone A\",\n  \"city\": \"New York\",\n  \"hourlyRate\": 5.50,\n  \"ownerId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces"]
+            }
+          }
+        },
+        {
+          "name": "Get All Parking Spaces",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces"]
+            }
+          }
+        },
+        {
+          "name": "Get Available Parking Spaces",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/available",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "available"]
+            }
+          }
+        },
+        {
+          "name": "Get Parking Space by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/{{parking_space_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "{{parking_space_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Parking Spaces by City",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/city/New York",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "city", "New York"]
+            }
+          }
+        },
+        {
+          "name": "Get Available Spaces by City and Zone",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/available/city/New York/zone/Zone A",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "available", "city", "New York", "zone", "Zone A"]
+            }
+          }
+        },
+        {
+          "name": "Reserve Parking Space",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"durationHours\": 2\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/{{parking_space_id}}/reserve",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "{{parking_space_id}}", "reserve"]
+            }
+          }
+        },
+        {
+          "name": "Occupy Parking Space",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/{{parking_space_id}}/occupy",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "{{parking_space_id}}", "occupy"]
+            }
+          }
+        },
+        {
+          "name": "Release Parking Space",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/{{parking_space_id}}/release",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "{{parking_space_id}}", "release"]
+            }
+          }
+        },
+        {
+          "name": "Get Available Spaces Count",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/stats/available-count/city/New York",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "stats", "available-count", "city", "New York"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vehicle Service",
+      "item": [
+        {
+          "name": "Register Vehicle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"licensePlate\": \"ABC123\",\n  \"make\": \"Toyota\",\n  \"model\": \"Camry\",\n  \"year\": 2022,\n  \"color\": \"Blue\",\n  \"vehicleType\": \"CAR\",\n  \"userId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles"]
+            }
+          }
+        },
+        {
+          "name": "Get All Vehicles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles"]
+            }
+          }
+        },
+        {
+          "name": "Get Vehicle by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "{{vehicle_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Vehicle by License Plate",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/license-plate/ABC123",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "license-plate", "ABC123"]
+            }
+          }
+        },
+        {
+          "name": "Get Vehicles by User",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/user/{{user_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "user", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Parked Vehicles",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/parked",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "parked"]
+            }
+          }
+        },
+        {
+          "name": "Simulate Vehicle Entry",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"parkingSpaceId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/entry",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "{{vehicle_id}}", "entry"]
+            }
+          }
+        },
+        {
+          "name": "Simulate Vehicle Exit",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}/exit",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "{{vehicle_id}}", "exit"]
+            }
+          }
+        },
+        {
+          "name": "Update Vehicle",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"licensePlate\": \"ABC123\",\n  \"make\": \"Toyota\",\n  \"model\": \"Camry\",\n  \"year\": 2022,\n  \"color\": \"Red\",\n  \"vehicleType\": \"CAR\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/{{vehicle_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "{{vehicle_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Payment Service",
+      "item": [
+        {
+          "name": "Create Payment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 1,\n  \"vehicleId\": 1,\n  \"parkingSpaceId\": 1,\n  \"parkingDurationHours\": 2,\n  \"hourlyRate\": 5.50,\n  \"paymentMethod\": \"CREDIT_CARD\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/payments",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments"]
+            }
+          }
+        },
+        {
+          "name": "Get All Payments",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments"]
+            }
+          }
+        },
+        {
+          "name": "Get Payment by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments/{{payment_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "{{payment_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Payments by User",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments/user/{{user_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "user", "{{user_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Payments by Status",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments/status/COMPLETED",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "status", "COMPLETED"]
+            }
+          }
+        },
+        {
+          "name": "Process Payment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cardNumber\": \"4111111111111111\",\n  \"cardHolderName\": \"John Doe\",\n  \"expiryDate\": \"12/25\",\n  \"cvv\": \"123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/payments/{{payment_id}}/process",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "{{payment_id}}", "process"]
+            }
+          }
+        },
+        {
+          "name": "Refund Payment",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/payments/{{payment_id}}/refund",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "{{payment_id}}", "refund"]
+            }
+          }
+        },
+        {
+          "name": "Cancel Payment",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/payments/{{payment_id}}/cancel",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "{{payment_id}}", "cancel"]
+            }
+          }
+        },
+        {
+          "name": "Get Total Revenue",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments/stats/total-revenue",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "stats", "total-revenue"]
+            }
+          }
+        },
+        {
+          "name": "Get User Total Payments",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/payments/stats/user/{{user_id}}/total-payments",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "stats", "user", "{{user_id}}", "total-payments"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "System Health & Monitoring",
+      "item": [
+        {
+          "name": "Eureka Dashboard",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8761",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8761"
+            }
+          }
+        },
+        {
+          "name": "Config Server Health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8888/actuator/health",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8888",
+              "path": ["actuator", "health"]
+            }
+          }
+        },
+        {
+          "name": "API Gateway Health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/actuator/health",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["actuator", "health"]
+            }
+          }
+        },
+        {
+          "name": "User Service Health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8083/actuator/health",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["actuator", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Complete Workflow Tests",
+      "item": [
+        {
+          "name": "1. Register Parking Owner",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"parking_owner\",\n  \"email\": \"owner@example.com\",\n  \"password\": \"password123\",\n  \"firstName\": \"Parking\",\n  \"lastName\": \"Owner\",\n  \"phoneNumber\": \"+1234567890\",\n  \"userType\": \"PARKING_OWNER\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/register",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "register"]
+            }
+          }
+        },
+        {
+          "name": "2. Register Regular User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"regular_user\",\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\",\n  \"firstName\": \"Regular\",\n  \"lastName\": \"User\",\n  \"phoneNumber\": \"+1234567891\",\n  \"userType\": \"REGULAR_USER\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users/register",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "register"]
+            }
+          }
+        },
+        {
+          "name": "3. Create Multiple Parking Spaces",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"spaceNumber\": \"NYC-A001\",\n  \"location\": \"Times Square Parking Garage\",\n  \"zone\": \"Zone A\",\n  \"city\": \"New York\",\n  \"hourlyRate\": 8.00,\n  \"ownerId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces"]
+            }
+          }
+        },
+        {
+          "name": "4. Register User Vehicle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"licensePlate\": \"NY-ABC123\",\n  \"make\": \"Honda\",\n  \"model\": \"Civic\",\n  \"year\": 2023,\n  \"color\": \"Silver\",\n  \"vehicleType\": \"CAR\",\n  \"userId\": 2\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles"]
+            }
+          }
+        },
+        {
+          "name": "5. Search Available Parking",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/available/city/New York/zone/Zone A",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "available", "city", "New York", "zone", "Zone A"]
+            }
+          }
+        },
+        {
+          "name": "6. Reserve Parking Space",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"durationHours\": 3\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/1/reserve",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "1", "reserve"]
+            }
+          }
+        },
+        {
+          "name": "7. Create Payment for Reservation",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": 2,\n  \"vehicleId\": 1,\n  \"parkingSpaceId\": 1,\n  \"parkingDurationHours\": 3,\n  \"hourlyRate\": 8.00,\n  \"paymentMethod\": \"CREDIT_CARD\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/payments",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments"]
+            }
+          }
+        },
+        {
+          "name": "8. Process Payment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cardNumber\": \"4111111111111111\",\n  \"cardHolderName\": \"Regular User\",\n  \"expiryDate\": \"12/25\",\n  \"cvv\": \"123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/payments/1/process",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payments", "1", "process"]
+            }
+          }
+        },
+        {
+          "name": "9. Simulate Vehicle Entry",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"parkingSpaceId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/1/entry",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "1", "entry"]
+            }
+          }
+        },
+        {
+          "name": "10. Occupy Parking Space",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/1/occupy",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "1", "occupy"]
+            }
+          }
+        },
+        {
+          "name": "11. Simulate Vehicle Exit",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/vehicles/1/exit",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vehicles", "1", "exit"]
+            }
+          }
+        },
+        {
+          "name": "12. Release Parking Space",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/parking-spaces/1/release",
+              "host": ["{{base_url}}"],
+              "path": ["api", "parking-spaces", "1", "release"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

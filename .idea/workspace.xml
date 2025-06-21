@@ -4,158 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="560c0c54-6499-4372-a74a-21e938a9d3c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/api_gateway_Web_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/eureka_server_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/eureka_server_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart-Parking-Management-System.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/ijse/apigateway/ApiGatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/lk/ijse/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/lk/ijse/configserver/ConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/test/java/lk/ijse/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/lk/ijse/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/lk/ijse/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/controller/ParkingSpaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/controller/ParkingSpaceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/dto/ParkingSpaceRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/dto/ReservationRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/model/ParkingSpace.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/repository/ParkingSpaceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/repository/ParkingSpaceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/service/ParkingSpaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/com/spms/parkingspace/service/ParkingSpaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/controller/ParkingSpaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/controller/ParkingSpaceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/dto/ParkingSpaceRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/dto/ReservationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/model/ParkingSpace$SpaceStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/model/ParkingSpace$SpaceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/model/ParkingSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/repository/ParkingSpaceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/repository/ParkingSpaceRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/service/ParkingSpaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/classes/com/spms/parkingspace/service/ParkingSpaceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking-space-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/PaymentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/PaymentServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/dto/PaymentRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/dto/PaymentResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/dto/PaymentStatusUpdateDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/dto/ReceiptDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/exception/InvalidReceiptRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/exception/PaymentConflictException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/exception/PaymentNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/model/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/model/Receipt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/repository/PaymentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/service/ReceiptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/service/impl/PaymentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/spms/payment/service/impl/ReceiptServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/PaymentServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/PaymentServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/controller/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/dto/PaymentRequestDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/dto/PaymentResponseDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/dto/PaymentStatusUpdateDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/dto/ReceiptDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/exception/InvalidReceiptRequestException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/exception/PaymentConflictException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/exception/PaymentNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/model/Payment$PaymentMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/model/Payment$PaymentStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/model/Payment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/repository/PaymentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/repository/PaymentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/service/PaymentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/service/PaymentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/service/ReceiptService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/service/impl/PaymentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/classes/com/spms/payment/service/impl/ReceiptServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/dto/BookingRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/dto/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/dto/UserRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/model/BookingHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/repository/BookingHistoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/spms/user/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/UserServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/UserServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/dto/BookingRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/dto/LoginRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/dto/UserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/model/BookingHistory$BookingStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/model/BookingHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/model/User$UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/model/User$UserStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/repository/BookingHistoryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/spms/user/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/dto/VehicleEntryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/dto/VehicleRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/model/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/model/VehicleEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/repository/VehicleEntryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/repository/VehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/service/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/com/spms/vehicle/service/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/controller/VehicleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/dto/VehicleEntryRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/dto/VehicleRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/model/Vehicle$VehicleStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/model/Vehicle$VehicleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/model/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/model/VehicleEntry$EntryStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/model/VehicleEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/repository/VehicleEntryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/repository/VehicleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/repository/VehicleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/service/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/classes/com/spms/vehicle/service/VehicleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    <list default="true" id="560c0c54-6499-4372-a74a-21e938a9d3c6" name="Changes" comment="Fixed Cloud config">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,26 +15,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DilsaraThiranjaya"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DilsaraThiranjaya&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DilsaraThiranjaya/Smart-Parking-Management-System.git",
-    "accountId": "66902738-7036-4710-ac06-497e36b22ebe"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DilsaraThiranjaya/Smart-Parking-Management-System.git&quot;,
+    &quot;accountId&quot;: &quot;66902738-7036-4710-ac06-497e36b22ebe&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2yj6iJIb7XIbi8INJPe2xccOHK9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -225,6 +75,7 @@
     "Spring Boot.UserServiceApplication.executor": "Run",
     "Spring Boot.VehicleServiceApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/TRON/Documents/IdeaProjects/AD2/Smart-Parking-Management-System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -237,6 +88,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -313,11 +169,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750335762343</updated>
-      <workItem from="1750335771938" duration="4776000" />
+      <workItem from="1750335771938" duration="5082000" />
+      <workItem from="1750474916548" duration="1954000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed Cloud config">
+      <option name="closed" value="true" />
+      <created>1750340845725</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750340845725</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed Cloud config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Cloud config" />
   </component>
 </project>

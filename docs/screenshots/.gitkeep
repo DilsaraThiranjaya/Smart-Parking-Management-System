@@ -1,0 +1,20 @@
+# Screenshots Directory
+
+This directory contains screenshots for the project documentation.
+
+## Required Screenshots
+
+1. **eureka_dashboard.png** - Screenshot of the Eureka dashboard showing all registered microservices
+2. **api_testing.png** - Screenshot of successful API testing in Postman
+3. **database_schema.png** - Screenshot showing the database tables and relationships
+
+## How to Add Screenshots
+
+1. Take screenshots of the running application
+2. Save them in this directory with descriptive names
+3. Reference them in the README.md file using relative paths
+
+Example:
+```markdown
+![Eureka Dashboard](./docs/screenshots/eureka_dashboard.png)
+```
