@@ -13,7 +13,6 @@ A microservice-based smart parking management system built with Spring Boot and 
 - [Database Schema](#database-schema)
 - [Testing](#testing)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 
 ## 🎯 Overview
 
@@ -308,28 +307,8 @@ Import the Postman collection for comprehensive API testing:
 
 The Eureka dashboard shows all registered microservices and their health status.
 
-## 🤝 Contributing
+## 👥 Author
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **SPMS Development Team**
-
-## 🙏 Acknowledgments
-
-- Spring Boot and Spring Cloud communities
-- MySQL development team
-- All contributors and testers
+- **Dilsara Thiranjaya**
 
 ---
-
-For more information or support, please contact the development team or create an issue in the repository.

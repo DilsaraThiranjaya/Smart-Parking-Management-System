@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="560c0c54-6499-4372-a74a-21e938a9d3c6" name="Changes" comment="Fixed Cloud config">
+    <list default="true" id="560c0c54-6499-4372-a74a-21e938a9d3c6" name="Changes" comment="Readme and postmant collection added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/api-gateway-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/api-gateway-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/config-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/config-server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/screenshots/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/target/parking-space-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/target/parking-space-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/target/payment-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/target/payment-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/user-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/user-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/target/vehicle-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/target/vehicle-service-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,57 +58,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.Smart-Parking-Management-System [clean].executor": "Run",
-    "Maven.Smart-Parking-Management-System [install].executor": "Run",
-    "Maven.Smart-Parking-Management-System [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.Smart-Parking-Management-System [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
-    "Maven.api-gateway [clean].executor": "Run",
-    "Maven.api-gateway [install].executor": "Run",
-    "Maven.config-server [clean].executor": "Run",
-    "Maven.config-server [install].executor": "Run",
-    "Maven.eureka-server [clean].executor": "Run",
-    "Maven.eureka-server [install].executor": "Run",
-    "Maven.parking-space-service [clean].executor": "Run",
-    "Maven.parking-space-service [install].executor": "Run",
-    "Maven.payment-service [clean].executor": "Run",
-    "Maven.payment-service [install].executor": "Run",
-    "Maven.user-service [clean].executor": "Run",
-    "Maven.user-service [install].executor": "Run",
-    "Maven.vehicle-service [clean].executor": "Run",
-    "Maven.vehicle-service [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.ParkingSpaceServiceApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "Spring Boot.VehicleServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/TRON/Documents/IdeaProjects/AD2/Smart-Parking-Management-System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.Smart-Parking-Management-System [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Smart-Parking-Management-System [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Smart-Parking-Management-System [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Smart-Parking-Management-System [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gateway [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.config-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.config-server [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.parking-space-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.parking-space-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.payment-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.payment-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.vehicle-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.vehicle-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ParkingSpaceServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VehicleServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/TRON/Documents/IdeaProjects/AD2/Smart-Parking-Management-System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TRON\Documents\IdeaProjects\AD2\Smart-Parking-Management-System\docs\screenshots" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,7 +191,14 @@
       <option name="presentableId" value="Default" />
       <updated>1750335762343</updated>
       <workItem from="1750335771938" duration="5082000" />
-      <workItem from="1750474916548" duration="1954000" />
+      <workItem from="1750474916548" duration="2643000" />
+      <workItem from="1750480851505" duration="67000" />
+      <workItem from="1750481456202" duration="1133000" />
+      <workItem from="1750482717391" duration="2112000" />
+      <workItem from="1750484856795" duration="2905000" />
+      <workItem from="1750491604509" duration="636000" />
+      <workItem from="1750555181397" duration="2000" />
+      <workItem from="1750641729656" duration="5989000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Cloud config">
       <option name="closed" value="true" />
@@ -180,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750340845725</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Readme and postmant collection added">
+      <option name="closed" value="true" />
+      <created>1750478257786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750478257786</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Cloud config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Cloud config" />
+    <MESSAGE value="Readme and postmant collection added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme and postmant collection added" />
   </component>
 </project>

@@ -6,11 +6,11 @@
 
     <groupId>com.spms</groupId>
     <artifactId>Smart-Parking-Management-System</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>Smart Parking Management System</name>
-    <description>Microservice-based Smart Parking Management System</description>
+    <description>Smart Parking Management System using Microservices</description>
 
     <properties>
         <java.version>17</java.version>
